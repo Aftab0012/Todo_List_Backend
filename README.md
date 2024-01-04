@@ -21,8 +21,8 @@ Welcome to the ToDo Backend, a robust and versatile server-side application that
 
 1. Clone the repository:
 
-   ```bash
-  https://github.com/Aftab0012/Todo_List_Backend.git
+```bash
+https://github.com/Aftab0012/Todo_List_Backend.git
    ```
 
 2. Change to the project directory:
