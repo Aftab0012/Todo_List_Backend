@@ -1,3 +1,5 @@
+// This is a just Demo model for future optimizations
+
 const mongoose = require('mongoose');
 
 const noteShareSchema = new mongoose.Schema({
