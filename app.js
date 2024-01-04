@@ -7,9 +7,14 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes.js');
 const passport = require('./config/passport.js');
 const notesRoutes = require('./routes/notesRoutes.js');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 const PORT = 3002;
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 3000, // Limit each IP to 3000 requests per windowMs
+});
 
 const DB_URI = process.env.DB_URI;
 mongoose
@@ -32,21 +37,16 @@ app.get('/health', (req, res) => {
 });
 
 //User signup/login route
-app.use('/auth', authRoutes);
+app.use('/auth', limiter, authRoutes);
 
 app.use(passport.initialize());
 
-// JWT-protected route
 app.use(
-  '/todos',
+  '/api',
+  limiter,
   passport.authenticate('jwt', { session: false }),
-  (req, res) => {
-    console.log('All todos here');
-    res.status(200).json({ message: 'todos' });
-  }
+  notesRoutes
 );
-
-app.use('/api', passport.authenticate('jwt', { session: false }), notesRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
