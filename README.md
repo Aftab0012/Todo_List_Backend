@@ -53,12 +53,12 @@ Welcome to the ToDo Backend, a robust and versatile server-side application that
    
 ## API Reference
 
-### Im providing a fully functional and deployed backend link which is deployed on render.com you can use this link to perform below mentioned api actions to get desired responses.
+#### Im providing a fully functional and deployed backend link which is deployed on render.com you can use this link to perform below mentioned api actions to get desired responses.
 
 
 Render backend Link to perform API actions: https://todobackend-jybg.onrender.com
 
-### Note :- Please remember this Render.com deployed link goes to sleep mode after 15mins of inactivity, So when you first interact with this link wait atleast < 1 min after that the api endpoint withh be fully functional
+#### Note :- Please remember this Render.com deployed link goes to sleep mode after 15mins of inactivity, So when you first interact with this link wait atleast < 1 min after that the api endpoint withh be fully functional
 
 ## Authentication API's
 
