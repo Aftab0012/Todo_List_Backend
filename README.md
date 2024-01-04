@@ -13,21 +13,18 @@ Welcome to the ToDo Backend, a robust and versatile server-side application that
 - [Express.js](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/)
-- [Axios](https://axios-http.com/)
-- [Other Dependencies...]
+- [bcrypt]()
+- [jsonwebtoken]()
+- [passport.js]()
 
 ## Installation for local Environment
 
 1. Clone the repository:
 
-<<<<<<< HEAD
+
    ```bash
    https://github.com/Aftab0012/Todo_List_Backend.git
-=======
-```bash
-https://github.com/Aftab0012/Todo_List_Backend.git
->>>>>>> 849cea25405c72e14e9447aa1bde5b3e12e20aef
-   ```
+```
 
 2. Change to the project directory:
 
