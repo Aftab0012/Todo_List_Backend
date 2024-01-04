@@ -86,7 +86,7 @@ In the request body, provide the user credentials in the required format.
 {
  "message": "User registered successfully",
  "user": {
-  "username": "demouser",
+  "username": "John doe",
   "password": "$2b$10$C80SFVZOOyt0BP9lk2aF3ehiXacXh1e1fsIDFZvVr1pwqE9vsmpty",
   "date": "2024-01-04T09:15:11.756Z",
   "_id": "65967effc994760455640698",
